@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	background: linear-gradient(to bottom, #850000, black);
+	height:100vh;
+}
+.sign-header{
+	display:flex;
+	justify-content: center;
+	text-shadow: #000 0px 0px 20px 1px;
+}
+
+.sign-header h2{
+	color:white;
+	font: 35px Verdana;
+  font-weight: 700;
+  margin-top:20px;
+  text-shadow: 4px 3px 12px #000;
+}
+.songs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+}
+.song{
+	width: 200px; height: 200px;
+	background-color: red;
+	margin-top: 40px;
+	margin-right: 5px;
+	color:white;
+	position:relative;
+	box-shadow: #000 0px 0px 20px 1px;
+	text-align:center;
+	transition: all 0.3s ease-in-out;
+}
+.xx{
+	background: url(images/xx.jpg);
+	background-size: cover;
+}
+.gotye{
+	background: url(images/gotye.jpg);
+	background-size: cover;
+}
+.requiem{
+	background: url(images/requiem.jpg);
+	background-size: cover;
+}
+.toxicity{
+	background: url(images/toxicity.jpg);
+	background-size: cover;
+}
+.ultimate{
+	background: url(images/ultimate.jpg);
+	background-size: cover;
+}
+.song-title{
+	position: relative;
+	font:18px Verdana;
+	font-weight: 700;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	z-index: 1;
+
+}
+.song-background{
+	position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 0.2s ease-in-out;
+ 
+}
+.song:hover{
+	transform: scale(1.1);
+}
+.song:hover .song-background {
+  background: rgba(0,0,0, 0.5);
+}
+.song:hover .song-title{
+	opacity:1;
+}
